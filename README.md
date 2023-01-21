@@ -10,11 +10,13 @@ Find the correct Correction Number for a 12 digit long number.
 
 ### Dependencies
 
-* Nothing has to be installed to use this programm.
+* Nothing has to be installed to use this programm, exept for the code itself.
 
 ### Executing program
 
-* Copy-Paste the code into your prefered IDE/Code Editor. You can then replace the ```console.log(findCorrectNum('123456789012'))``` with your own number.
+* Download the code.
+* Find the index.html file in your downloads (or wherever you downloaded it to).
+* You can now run the index.html file and input any 12 digit long number, to find its correction number
 
 ## Authors
 
@@ -23,6 +25,9 @@ Contributors names and contact info
 [bastikadu#0286](https://discordapp.com/users/688420790366240880)
 
 ## Version History
+
+* 1.1
+   * Added Website support to the script
 
 * 1.0
     * Initial Release

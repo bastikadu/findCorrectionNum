@@ -1,11 +1,23 @@
+// Initiallize constants
+const input = document.getElementById('input');
+
+// Submit form when ENTER is pressed
+input.addEventListener('keydown', function (event) {
+    if (event.keyCode === 13) {
+        run();
+    }
+})
+
 function findCorrectionNum(num) {
     // Check if input is 12 digits long
     if (num.toString().length !== 12) {
-        return "Die Eingabe muss 12 Ziffern lang sein.";
+        alert("Die Eingabe muss 12 Ziffern lang sein.");
+        return;
     }
     // Check if input contains only numbers
     if (!/^\d+$/.test(num)) {
-        return "Die Eingabe darf nur Zahlen enthalten.";
+        alert("Die Eingabe darf nur Zahlen enthalten.");
+        return;
     }
 
     // Initialize result and factor variables
@@ -22,7 +34,10 @@ function findCorrectionNum(num) {
         factor = factor === 1 ? 3 : 1;
     }
 
-    return `${10 - result % 10} ist die Prüfziffer`;
+    alert(`${10 - result % 10} ist die Prüfziffer`)
+    return
 }
 
-console.log(findCorrectionNum('123456789012'));
+function run() {
+    findCorrectionNum(input.value);
+}
